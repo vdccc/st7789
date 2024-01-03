@@ -21,14 +21,14 @@ struct st7789 {
   struct st7789_spi spi;
 };
 
-i8 init(struct st7789 *drv);
+i8 st7789_init(struct st7789 *drv);
 
-void disp_on(struct st7789 *drv);
-void disp_off(struct st7789 *drv);
-void disp_idle_on(struct st7789 *drv);
-void disp_idle_off(struct st7789 *drv);
-void disp_sleep_on(struct st7789 *drv);
-void disp_sleep_off(struct st7789 *drv);
+void st7789_disp_on(struct st7789 *drv);
+void st7789_disp_off(struct st7789 *drv);
+void st7789_disp_idle_on(struct st7789 *drv);
+void st7789_disp_idle_off(struct st7789 *drv);
+void st7789_disp_sleep_on(struct st7789 *drv);
+void st7789_disp_sleep_off(struct st7789 *drv);
 
 struct st7789_blit_tgt {
   u16 col_start;
@@ -38,6 +38,6 @@ struct st7789_blit_tgt {
   u8 *buf;
 };
 
-i8 blit(struct st7789 *drv, struct st7789_blit_tgt *tgt);
+i8 st7789_blit(struct st7789 *drv, struct st7789_blit_tgt *tgt);
 
 #endif
