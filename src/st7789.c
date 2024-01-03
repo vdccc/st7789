@@ -1,6 +1,6 @@
 #include "st7789.h"
 
-#include "st7789_commands.h"
+#include "include/st7789_commands.h"
 
 static void spi_send(struct st7789 *drv, u8 data) {
   drv->spi.send(drv->spi.spi_priv, data);

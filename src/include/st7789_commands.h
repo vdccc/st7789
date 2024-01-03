@@ -19,13 +19,4 @@
 
 #define SWRESET_DELAY_MSEC 120
 
-// struct command {
-//   u8 cmd;
-//   u8 delay_msec;
-//   u8 args[];
-// };
-
-// static const struct command swreset_seq[] = {{SWRESET, SWRESET_DELAY_MSEC,
-// {}}};
-
 #endif
