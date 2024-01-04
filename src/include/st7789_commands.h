@@ -14,7 +14,6 @@
 #define IDMOFF 0x38
 #define IDMON 0x39
 
-#define DATA(x) (u8) x | (1 << 7)
 #define COLOR(x) DATA(x << 2)
 
 #define SWRESET_DELAY_MSEC 120
